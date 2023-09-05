@@ -1,4 +1,15 @@
 ########################################### ( My username on codeforces @MeMe. ) ###############################################
+# Hit the Lottery
+n = int(input())
+dollar_bills = [100, 20, 10, 5, 1]
+mini_bills = 0
+ 
+for element in dollar_bills:
+    mini_bills += n // element
+    n %= element
+ 
+print(mini_bills)
+################################################################################################################################
 # Watermelon
 n =  int(input())
 print("YES") if n%2 == 0 and n !=2 else print("NO")
